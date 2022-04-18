@@ -1,0 +1,39 @@
+:root {
+  --colour-theme:blue;
+}
+
+body {
+  padding:10%;
+  padding-top: 0;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  color:var(--colour-theme);
+  font-size:10vw;
+}
+
+#name{
+  font-family: 'Ms Madi';
+}
+
+
+h3 {
+  color:var(--colour-theme);
+  
+}
+
+.blog-list{
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--colour-theme);
+}
+
+a:hover {
+  text-decoration: underline;
+}
