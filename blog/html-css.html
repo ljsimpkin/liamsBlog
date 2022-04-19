@@ -7,35 +7,33 @@
   
   <body>
     <h2>What is the difference between margins, borders, and padding?</h2>
-    <h3>19 Apr 2022</h3>
     
+    <h3>19 Apr 2022</h3>
     <p>
       Margin is the space outside the element, padding is the space inside the element surrounding the contents, and the border is in between the two surrounding the element.
     </p>
-
     <img src="../img/padding-margin-border.jpg">
 
     <h3>What happens when margin is negative?</h3>
-
     <img src="../img/negative-margin.jpg">
     <p>
       When the margin becomes negative, it enlarges the element, stretching it to fill the empty space. The last element dominates the earlier one. 
     </p>
 
     <h3>What happens when the padding is negative? </h3>
-
     <img src="../img/negative padding.jpg">
-
     <p>
       Nothing, a negative padding is the same as zero padding.
     </p>
 
    <h3>How and when to use each?</h3>
-
     <p>Both margin and padding can have the same desired effect. Say you want to move your contents to the right away from the left hand side. You can adjust the left margin, or adjust the left padding, both will have the same effect. This only works when the element’s border and background are invisible. If the element’s  border or background is visible, padding will help you move contents away from the border and conversely margin will help you move the border away from other elements.</p>
     <p>Although you can get the same outcome, there are some nuances between margin and padding. If you use padding to separate two elements, the distance between the contents of each element will equal the first element's padding plus the second element’s padding. If margins are used instead, neighboring margins overlap therefore the distance between them equals the greater of the two margins.</p>
     <p>Another difference is that padding is included in the click region whereas margin is not. So if you want to make a button, padding will help you change the size of it and move the contents whereas margin will help you position it on the page.</p>
 
+
+    <!-- Code pen to display the 3 types of properties -->
+    <h3>Have a play around</h3>
     <p class="codepen" data-height="470" data-default-tab="html,result" data-slug-hash="jOYXdpK" data-editable="true" data-user="ljsimpkin" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
       <span>See the Pen <a href="https://codepen.io/ljsimpkin/pen/jOYXdpK">
       Borders, margins, and padding</a> by ljsimpkin (<a href="https://codepen.io/ljsimpkin">@ljsimpkin</a>)
@@ -44,6 +42,7 @@
     <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
     <!-- Back to home button -->
-    <a href="../index.html">Back to main</a>
+    <p><a href="../index.html">Back to main</a></p>
+    
   </body>
 </html>
