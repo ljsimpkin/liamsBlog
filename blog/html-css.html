@@ -30,6 +30,12 @@
       Nothing, a negative padding is the same as zero padding.
     </p>
 
+   <h3>How and when to use each?</h3>
+
+    <p>Both margin and padding can have the same desired effect. Say you want to move your contents to the right away from the left hand side. You can adjust the left margin, or adjust the left padding, both will have the same effect. This only works when the element’s border and background are invisible. If the element’s  border or background is visible, padding will help you move contents away from the border and conversely margin will help you move the border away from other elements.</p>
+    <p>Although you can get the same outcome, there are some nuances between margin and padding. If you use padding to separate two elements, the distance between the contents of each element will equal the first element's padding plus the second element’s padding. If margins are used instead, neighboring margins overlap therefore the distance between them equals the greater of the two margins.</p>
+    <p>Another difference is that padding is included in the click region whereas margin is not. So if you want to make a button, padding will help you change the size of it and move the contents whereas margin will help you position it on the page.</p>
+
     <!-- Back to home button -->
     <a href="../index.html">Back to main</a>
   </body>
