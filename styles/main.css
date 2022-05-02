@@ -20,6 +20,7 @@ h1 {
 h2 {
   color: var(--colour-theme);
   font-size:4.5vw;
+  text-align: center;
 }
 
 h3 {
