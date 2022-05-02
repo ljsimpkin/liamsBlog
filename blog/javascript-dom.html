@@ -1,50 +1,62 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <title>Web Development</title>
     <meta charset="UTF-8">
     <link href="../styles/main.css" rel="stylesheet" type="text/css">
-  </head>
-  
-  <body>
+</head>
+
+<body>
     <h2>Web Development for Everyone</h2>
     <h3>28 Apr 2022</h3>
 
     <p>This blog will run through some of the basic concepts of web development.</p>
 
     <h3>HTML CSS and Javascript</h3>
-    <p>These three languages are the building blocks of most websites. You can think of HTML like a canvas an artist uses, it holds the paint in position, and CSS is like the paint, what colours are choosen and how you would like those parts of the canvas to stand out. Javascript can do everything, it’s the brain of the painter. It’s able to choose a different canvas, decide on what paint to use, and any logic to compute (some of which may be hidden from view).</p></p>
+    <p>These three languages are the building blocks of most websites. You can think of HTML like a canvas an artist uses, it holds the paint in position, and CSS is like the paint, what colours are choosen and how you would like those parts of the canvas
+        to stand out. Javascript can do everything, it’s the brain of the painter. It’s able to choose a different canvas, decide on what paint to use, and any logic to compute (some of which may be hidden from view).</p>
+    </p>
 
     <h3>The DOM: Document Object Model</h3>
-    <p>The DOM is what enables Javascript to interact with the canvas. It’s the artist’s body, their arms, legs, and hands that enable the painter to colour the canvas or choose a new one. The DOM is a schematic of the entire website whose object-like format allows you to change any part of a website. It’s actually possible to use any programming language to do this but Javascript is the default standard for most of the internet.</p>
+    <p>The DOM is what enables Javascript to interact with the canvas. It’s the artist’s body, their arms, legs, and hands that enable the painter to colour the canvas or choose a new one. The DOM is a schematic of the entire website whose object-like format
+        allows you to change any part of a website. It’s actually possible to use any programming language to do this but Javascript is the default standard for most of the internet.</p>
 
     <h3>Objects and Arrays</h3>
-    <p>Searching for values in arrays is done so sequentially. That means that if you had a shopping list and wanted to find "eggs" on the list, you might have to go through all the items until you found it. In contrast, values accessed from javascript objects are done directly. How does it work? It works by using hashing functions and hash tables. We input what we are looking for into the hash function and out comes the location like magic! You can imagine it as if our supermarket shopper has made a rule to keep eggs in the centre of the page. When they search for eggs, they put that into the rule, and then the output tells them to look at the centre of the page. Hash functions, like SHA-256, are much more complicated rules. They always return the same output for the same input, have the same output length (64 characters), and it looks a bit like gibberish:</p>
-<pre>75712c3ea4c91a3c7089dbfc7ee4dacd29a6cdefb2a71a31c2e011ba44f18eea</pre>
-    <p>Above is the SHA-256 output for the input "Javascript". You can build your own <a href="https://emn178.github.io/online-tools/sha256.html">here</a>. When you search for a value, the hash function tells you the index of it, and your computer goes directly to the location. In the example below, name’s are inputted into the hash function, and then the corresponding index and phone number can be found.</p>
+    <p>In Javascript, to declare objects use the {} syntax. To declare arrays use the [] syntax.</p>
+    <p>Searching for values in arrays is done so sequentially. That means that if you had a shopping list and wanted to find "eggs" on the list, you might have to go through all the items until you found it. In contrast, values accessed from javascript objects
+        are done directly. How does it work? It works by using hashing functions and hash tables. We input what we are looking for into the hash function and out comes the location like magic! You can imagine it as if our supermarket shopper has made
+        a rule to keep eggs in the centre of the page. When they search for eggs, they put that into the rule, and then the output tells them to look at the centre of the page. Hash functions, like SHA-256, are much more complicated rules. They always
+        return the same output for the same input, have the same output length (64 characters), and it looks a bit like gibberish:</p>
+    <pre>75712c3ea4c91a3c7089dbfc7ee4dacd29a6cdefb2a71a31c2e011ba44f18eea</pre>
+    <p>Above is the SHA-256 output for the input "Javascript". You can build your own <a href="https://emn178.github.io/online-tools/sha256.html">here</a>. When you search for a value, the hash function tells you the index of it, and your computer goes directly
+        to the location. In the example below, name’s are inputted into the hash function, and then the corresponding index and phone number can be found.</p>
     <img src="../img/hashFun.png">
-    <p>Once the index is known for an array, it is fast for the computer to find the corresponding value. Every value in an array, even empty, uses the same amount of space in memory. So when looking up the value of an index (eg: array[7]), the computer starts off with the home address of the array, and then multiplies the memory length 7 times, adds the two together, and then you have the exact address. Checkout this answer <a href="https://www.quora.com/How-can-a-computer-look-up-an-index-in-an-array-in-constant-time">here</a> for more.</p>
-    <p>The epicness of Javascript objects comes from their ability to calculate a value’s index without going through an array, but by using a hashing algorithm. Arrays don’t have this search capability although they are sometimes used in hashtables (and therefore objects) to store the indexes and values.</p>
+    <p>Once the index is known for an array, it is fast for the computer to find the corresponding value. Every value in an array, even empty, uses the same amount of space in memory. So when looking up the value of an index (eg: array[7]), the computer
+        starts off with the home address of the array, and then multiplies the memory length 7 times, adds the two together, and then you have the exact address. Checkout this answer <a href="https://www.quora.com/How-can-a-computer-look-up-an-index-in-an-array-in-constant-time">here</a>        for more.</p>
+    <p>The epicness of Javascript objects comes from their ability to calculate a value’s index without going through an array, but by using a hashing algorithm. Arrays don’t have this search capability although they are sometimes used in hashtables (and
+        therefore objects) to store the indexes and values.</p>
 
     <h3>Control Flow and Loops</h3>
     <p><strong>Control Flow</strong></p>
-    <p>A program's control flow is the order in which the program's code executes. This occurs in imperative programs that tell computers exactly what to do and not declarative which tell a program what to do at a high level. Control flow is made up of individual statements, loops, instructions or function calls. </p>
-    
+    <p>A program's control flow is the order in which the program's code executes. This occurs in imperative programs that tell computers exactly what to do and not declarative which tell a program what to do at a high level. Control flow is made up of individual
+        statements, loops, instructions or function calls. </p>
+
     <p><strong>Loops</strong></p>
     <p>When loops are used, they make up part of a programs control flow. Each loop’s iteration is added to the control flow.</p>
 
     <h3>Functions</h3>
     <p>Functions, or more specifically programmatic functions, are repetitive procedures whose process always remains the same. They often have some kind of input and output. For example this function takes an input and returns 2 times the inputNumber:</p>
-<pre>function doubleInput(inputNumber){
+    <pre>function doubleInput(inputNumber){
   return (2 * input)
 }
-</pre>  
+</pre>
     <p>Functions are really useful because they allow the code to be modular.</p>
 
     <h3>Dev Tools</h3>
     <p><strong>DOM</strong></p>
     <p>You can see a visual representation of the DOM by using Google Chrome's developer tools. </p>
-    <img src="../img/dom.png"">
+    <img src="../img/dom.png" ">
     <p>On the right we have the visual representation. You can open and close all the data like an object and it will show you where it corresponds on the page. In this example, I have highlighted the body element and you can see the orange margin, the green padding, and the blue content</p>
 
     <p><strong>Run Snippets</strong></p>
@@ -58,7 +70,7 @@
 console.log(localStorage.getItem('name'))
 localStorage.clear('name')</pre>
 
-<img src="../img/localStorage.jpg">
+<img src="../img/localStorage.jpg ">
 
 <p><strong>Session Storage</strong></p>
 <p>This works much like Local Storage except the data is cleared when your browser is closed or website changes</p>
@@ -66,13 +78,13 @@ localStorage.clear('name')</pre>
 <pre>sessionStorage.setItem('name', 'Liam')</pre>
 
 <p><strong>Cookies</strong></p>
-<pre>document.cookie("username=John Doe")</pre>
+<pre>document.cookie("username=John Doe ")</pre>
 
 <h3>Useful Code</h3>
 
 <p>Put output into groups:</p>
-<pre>console.group("group 1")
-	console.log("hello")</pre>
+<pre>console.group("group 1 ")
+	console.log("hello ")</pre>
 
 <p>Log run time:</p>
 <pre>
@@ -81,11 +93,11 @@ console.timeend(“name”)
 </pre>
 
 <p>Throw an error:</p>
-<pre>console.error("this is error message")</pre>
+<pre>console.error("this is error message ")</pre>
 
 <h3>Data Structure Speeds</h3>
-<img src="../img/dataStructureSpeed.png"></img>
+<img src="../img/dataStructureSpeed.png "></img>
     
-    <a href="../index.html">Back to main</a>
+    <a href="../index.html ">Back to main</a>
   </body>
 </html>

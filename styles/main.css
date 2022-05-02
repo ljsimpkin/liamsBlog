@@ -1,76 +1,88 @@
 /* Set this global variable to change the colour theme everywhere */
+
 :root {
-  --colour-theme:blue;
+    --colour-theme: blue;
 }
 
 body {
-  padding:10%;
-  padding-top: 0;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size:2vw;
-  /* Makes the text the full width of the screen */
-  text-align: justify;
+    padding: 10%;
+    padding-top: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2vw;
+    /* Makes the text the full width of the screen */
+    text-align: justify;
 }
 
 h1 {
-  color:var(--colour-theme);
-  font-size:10vw;
+    color: var(--colour-theme);
+    font-size: 10vw;
 }
 
 h2 {
-  color: var(--colour-theme);
-  font-size:4.5vw;
-  text-align: center;
+    color: var(--colour-theme);
+    font-size: 4.5vw;
+    text-align: center;
 }
 
 h3 {
-  color:var(--colour-theme);
+    color: var(--colour-theme);
 }
 
-#name{
-  padding-top: 10%;
-  font-family: 'Ms Madi';
+#name {
+    padding-top: 10%;
+    font-family: 'Ms Madi';
 }
 
-
-.blog-list{
-  list-style-type: none;
-  margin-top: 15px;
+.blog-list {
+    margin-top: 15px;
+    line-height: 30pt;
+    font-size: 1.17em;
+    font-weight: bold;
 }
+
 
 /* Hides the default blue and underline */
+
 a {
-  text-decoration: none;
-  color: var(--colour-theme);
+    text-decoration: none;
+    color: var(--colour-theme);
 }
 
+
 /* Highlight a line underneath links */
+
 a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 img {
-  width:60vw;
-  /* centers the images */
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+    width: 60vw;
+    /* centers the images */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
+
 /* Use to format code */
+
 pre {
-  background: #f4f4f4;
-  border: 1px solid #ddd;
-  border-left: 3px solid #f36d33;
-  color: #666;
-  page-break-inside: avoid;
-  font-family: monospace;
-  font-size: 15px;
-  line-height: 1.6;
-  margin-bottom: 1.6em;
-  max-width: 100%;
-  overflow: auto;
-  padding: 1em 1.5em;
-  display: block;
-  word-wrap: break-word;
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    border-left: 3px solid #f36d33;
+    color: #666;
+    page-break-inside: avoid;
+    font-family: monospace;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 1.6em;
+    max-width: 100%;
+    overflow: auto;
+    padding: 1em 1.5em;
+    display: block;
+    word-wrap: break-word;
+}
+
+span {
+    color: gray;
 }
