@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Problem-Solving</title>
+    <meta charset="UTF-8">
+    <link href="../styles/main.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <h2>Problem Solving</h2>
+    <h3>3rd May 2022</h3>
+
+    <h3>Problem solving ideas:</h3>
+    <li>Pseudocode</li>
+    <li>Trying something</li>
+    <li>Rubber ducky method</li>
+    <li>Reading error messages</li>
+    <li>Console.logging</li>
+    <li>Googling</li>
+    <li>Asking your peers for help</li>
+    <li>Asking coaches for help</li>
+    <li>Improving your process with reflection</li>
+
+    <h3>The time I was stuck</h3>
+    <p>
+        I was stuck on <a href="https://github.com/ljsimpkin/DOM-interactions-liam">DOM-interactions</a> in Sprint 3 of Dev Academy. While trying to debug some code, I called my function. The problem was the function was being called before the page had
+        loaded completely so it was trying to access some values that didn’t exist yet. This was confusing to me because I just thought my function was broken and not the test I had made. Console.logs actually also worked since they weren’t accessing
+        any unavailable variables and this threw me off. I asked for help on the discord and explained the problem. I didn’t actually get an answer directly, it helped me understand my function was correct when somebody else shared a similar solution,
+        so I started to look elsewhere. I think the act of framing my problem helped target it more. I noticed all the functions were being called through a function called start() and this was only called at the very bottom of the html page. The javascript
+        file was loaded at the top (probably to keep all the packages together) so there needed to be something below that called all the script once the page had loaded.
+        <br>
+        <br> The above example benefited from asking for help, Rubber ducking (by helping me understand the problem), trying things, and console.logging.
+
+
+
+
+    </p>
+
+    <h3>An elegant solution</h3>
+
+    <p>
+        I was really curious about how arrow functions worked, they are quite spectacular. For a while they eluded me. Their over simplicity seemed to have some magic properties especially when used inside object methods. How could it be that when you used .map,
+        your arrow function’s property became each value of the array? How did it know what to return without a return statement? I learnt that they are basically another way of writing a function. That if you have nothing but an expression, the function
+        will return that expression. Furthermore, when using map, or some other functions, you only need to write the function name and it will automatically input the function parameters. This helped me write the function <a href="https://replit.com/@ljsimpkin/Super-FizzBuzz#index.js">super_fizzbuzz</a>        in one line.
+    </p>
+
+    <pre>
+function fizzbuzz(num) {
+...
+}
+
+function super_fizzbuzz(arr) {
+  return arr.map(fizzbuzz)
+}
+  </pre>
+
+    <a href="../index.html">Back to main</a>
+</body>
+
+</html>
